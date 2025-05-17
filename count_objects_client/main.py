@@ -36,7 +36,7 @@ while True:
             k+=1
     plt.imshow(mask_eroded)
     plt.show()
-    print(f"Сейчас шариков {c}, а кубиков {k}" )
+    print(f"Всего обьектов {len(regions)}, шариков {c}, а кубиков {k}" )
     key =chr(cv2.waitKey(1) & 0xFF)
     if key == 'q':
         break
